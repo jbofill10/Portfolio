@@ -15,7 +15,7 @@
   "scripts": {
     "start": "next start",
     "build_dev": "next build && yarn netlify deploy --prod",
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next dev"
   },
   "eslintConfig": {
