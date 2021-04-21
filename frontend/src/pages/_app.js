@@ -1,4 +1,5 @@
-import './app.css'
+import './styles/app.css'
+import './styles/Sidebar.css'
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
