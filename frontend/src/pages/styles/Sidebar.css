@@ -1,8 +1,45 @@
-.Sidebar {
-    position: absolute;
-    display: flex;
-    width: 100px;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+ul {
+    padding-inline-start: 0;
 }
+
+.Sidebar {
+    width: 200px;
+    height: 100vh;
+}
+
+.SidebarList {
+    height: auto;
+}
+
+.SidebarRow {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+}
+
+
+.SidebarIcon {
+}
+
+.SidebarText {
+    margin-left: 5px;
+}
+
+.SidebarOpen {
+    position: fixed;
+    left: 0;
+    transition: left 200ms;
+    margin-left: 10px;
+}
+
+.SidebarClosed {
+    position: fixed;
+    left: -100%;
+    transition: left 850ms;
+}
+
+.NavBar {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
