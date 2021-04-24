@@ -2,6 +2,10 @@
     height: 100vh !important;
 }
 
+.pro-menu {
+    margin-top: -10px !important;
+}
+
 .pro-sidebar, collapsed {
     height: 100vh !important;
 }
@@ -10,11 +14,23 @@
     margin-bottom: 20px;
 }
 
-.bars {
-    font-size: 25px;
-    color: #adadad;
-    padding: 25%;
+.bars-tab {
     background-color:rgb(29 29 29);
-    justify-content: center;
+    padding-top: 20px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    font-size: 26px;
 }
 
+.arrow-right {
+    color: #adadad;
+    justify-content: center;
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+}
+
+.arrow-left {
+    color: #adadad;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}

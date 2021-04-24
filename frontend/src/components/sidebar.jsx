@@ -1,8 +1,8 @@
 import React from 'react';
 import { SidebarData } from './SidebarData.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 
 export default class Sidebar extends React.Component {
 
@@ -22,8 +22,8 @@ export default class Sidebar extends React.Component {
 	render(){
         return(
             <div>
-                <div className='bars'>
-                    <FontAwesomeIcon icon={faBars} onClick={this.barsClick}/>
+                <div className='bars-tab'>
+                    <FontAwesomeIcon className={this.state.collapsed ? 'arrow-right' : 'arrow-left'} icon={faAngleDoubleRight} onClick={this.barsClick}/>
                 </div>
 
                 <ProSidebar collapsed={this.state.collapsed} >
