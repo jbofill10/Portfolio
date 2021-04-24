@@ -1,5 +1,6 @@
 .App {
     display: flex;
+    background-color: #2B2F3B;
 }
 
 html, body, #__next {

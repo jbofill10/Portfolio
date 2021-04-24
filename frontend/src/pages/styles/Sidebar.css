@@ -2,8 +2,16 @@
     height: 100vh !important;
 }
 
+.pro-sidebar-inner {
+    background-color: #333847 !important;
+}
+
 .pro-menu {
     margin-top: -10px !important;
+}
+
+.pro-icon-wrapper {
+    background-color: #454C5F !important;
 }
 
 .pro-sidebar, collapsed {
@@ -14,12 +22,12 @@
     margin-bottom: 20px;
 }
 
-.bars-tab {
-    background-color:rgb(29 29 29);
-    padding-top: 20px;
-    padding-left: 26px;
-    padding-bottom: 20px;
-    font-size: 26px;
+.arrows-tab {
+    padding-top: 10px;
+    padding-left: 9px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: #333847;
 }
 
 .arrow-right {
@@ -33,4 +41,16 @@
     color: #adadad;
     transform: rotateY(180deg);
     transition: transform 0.5s;
+}
+
+.arrow-button {
+    font-size: 28px;
+    border:0px solid black; 
+    background-color: transparent;
+    width: 60px;
+    height: 40px;
+}
+
+.arrow-button:hover {
+    cursor: pointer;
 }

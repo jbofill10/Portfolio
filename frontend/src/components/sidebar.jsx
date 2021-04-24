@@ -22,8 +22,14 @@ export default class Sidebar extends React.Component {
 	render(){
         return(
             <div>
-                <div className='bars-tab'>
-                    <FontAwesomeIcon className={this.state.collapsed ? 'arrow-right' : 'arrow-left'} icon={faAngleDoubleRight} onClick={this.barsClick}/>
+                <div className='arrows-tab'>
+                    <button className='arrow-button' onClick={this.barsClick}>
+                        <FontAwesomeIcon 
+                            className={this.state.collapsed ? 'arrow-right' : 'arrow-left'} 
+                            icon={faAngleDoubleRight} 
+                            
+                        />
+                    </button>
                 </div>
 
                 <ProSidebar collapsed={this.state.collapsed} >
