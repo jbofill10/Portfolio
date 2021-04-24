@@ -2,40 +2,39 @@ import React from 'react';
 import { SidebarData } from './SidebarData.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 export default class Sidebar extends React.Component {
 
 	constructor(props){
 		super(props);
-        this.state={
-            'showSidebar': false
+        this.state = {
+            'collapsed': true
         }
 	}
 
     barsClick = () => {
-        this.state.showSidebar = this.setState({'showSidebar': !this.state.showSidebar})
+        this.setState({
+            'collapsed': !this.state.collapsed
+        })
     }
 
 	render(){
         return(
             <div>
-                <div className='NavBar'>
-                    <FontAwesomeIcon onClick={this.barsClick} icon={faBars} />
+                <div className='bars'>
+                    <FontAwesomeIcon icon={faBars} onClick={this.barsClick}/>
                 </div>
 
-                <div className='Sidebar'>
-                    <div className={this.state.showSidebar ? 'SidebarOpen' : 'SidebarClosed'}>
-                        <ul className='SideBarList'>
-                            {SidebarData.map((val, key) => {
-                                return(
-                                    <li className='SidebarRow' key={key}> 
-                                        <div>{val.icon}</div> 
-                                        <div className='SidebarText'>{val.title}</div>
-                                    </li>
-                                )})}
-                        </ul>
-                    </div>
-                </div>
+                <ProSidebar collapsed={this.state.collapsed} >
+                    <Menu iconShape="circle">
+                        {SidebarData.map((val) => {
+                            return(
+                                <MenuItem icon={ val.icon }> {val.title} </MenuItem>
+                            )
+                        })}
+                    </Menu>
+                </ProSidebar>
             </div>
 		)
 	}

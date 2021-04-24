@@ -1,45 +1,20 @@
-ul {
-    padding-inline-start: 0;
+.pro-sidebar {
+    height: 100vh !important;
 }
 
-.Sidebar {
-    width: 200px;
-    height: 100vh;
+.pro-sidebar, collapsed {
+    height: 100vh !important;
 }
 
-.SidebarList {
-    height: auto;
+.pro-menu-item {
+    margin-bottom: 20px;
 }
 
-.SidebarRow {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1%;
-}
-
-
-.SidebarIcon {
-}
-
-.SidebarText {
-    margin-left: 5px;
-}
-
-.SidebarOpen {
-    position: fixed;
-    left: 0;
-    transition: left 200ms;
-    margin-left: 10px;
-}
-
-.SidebarClosed {
-    position: fixed;
-    left: -100%;
-    transition: left 850ms;
-}
-
-.NavBar {
-    margin-top: 5px;
-    margin-left: 10px;
+.bars {
+    font-size: 25px;
+    color: #adadad;
+    padding: 25%;
+    background-color:rgb(29 29 29);
+    justify-content: center;
 }
 
