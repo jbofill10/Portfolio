@@ -24,10 +24,10 @@ export default class Sidebar extends React.Component {
             <div>
                 <div className='arrows-tab'>
                     <button className='arrow-button' onClick={this.barsClick}>
-                        <FontAwesomeIcon 
-                            className={this.state.collapsed ? 'arrow-right' : 'arrow-left'} 
-                            icon={faAngleDoubleRight} 
-                            
+                        <FontAwesomeIcon
+                            className={this.state.collapsed ? 'arrow-right' : 'arrow-left'}
+                            icon={faAngleDoubleRight}
+
                         />
                     </button>
                 </div>

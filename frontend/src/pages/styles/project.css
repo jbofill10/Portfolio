@@ -1,0 +1,10 @@
+.ProjectBG {
+    background-color: white;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.ProjectTitle {
+    text-align: center;
+}
