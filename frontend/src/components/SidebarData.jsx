@@ -13,18 +13,18 @@ export const SidebarData = [
     {
         title: 'Experience',
         icon: <FontAwesomeIcon icon={faBriefcase}/>,
-        link: 'experience'
+        link: '/experience'
     },
 
     {
         title: 'Projects',
         icon: <FontAwesomeIcon icon={faGithub}/>,
-        link: '/github'
+        link: '/projects'
     },
 
     {
         title: 'Contact Me',
         icon: <FontAwesomeIcon icon={faPaperPlane}/>,
-        link: 'contact'
+        link: '/contact'
     }
 ]
