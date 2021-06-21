@@ -2,6 +2,7 @@ import './styles/app.css'
 import './styles/Sidebar.css'
 import './styles/project.css'
 import './styles/experience.css'
+import './styles/grid.css'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import 'react-pro-sidebar/dist/css/styles.css';
 
