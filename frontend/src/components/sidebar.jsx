@@ -23,7 +23,7 @@ export default class Sidebar extends React.Component {
 
 	render(){
 		return(
-			<div>
+			<div className='Sidebar'>
 				<div className='arrows-tab'>
 					<button className='arrow-button' onClick={this.barsClick}>
 						<FontAwesomeIcon
