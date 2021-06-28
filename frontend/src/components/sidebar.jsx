@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidebarData } from './SidebarData.jsx'
+import { SidebarData } from '../constants/SidebarData.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
