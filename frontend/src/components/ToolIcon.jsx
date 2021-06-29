@@ -12,8 +12,8 @@ export default function ToolIcon(props) {
 			paddingRight: '10%'
 		}}>
 			<img src={props.src} style={{
-				height: 32,
-				width: 32
+				height: 45,
+				width: 42
 			}} />
 		</div>
 	);

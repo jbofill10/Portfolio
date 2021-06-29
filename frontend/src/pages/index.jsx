@@ -8,8 +8,8 @@ function App() {
 			<div className='AboutLayout'>
 				<div className='IntroText'>
 					<div className='Introduction'>
-						Hi, my name is
-						<div className='Name'>Juan Bofill</div>
+						Hi! My name is
+						<div className='Name'>JUAN BOFILL</div>
 
 						<div className='Description'>
 							I am a Software Engineer that loves to work on cool projects in my free time to
@@ -21,8 +21,9 @@ function App() {
 				<div className='Separator' />
 
 				<div className='ToolIntro' style={{
-					fontSize: 20,
-					marginBottom: "1%"
+					fontFamily: 'MadeTommy',
+					fontSize: 25,
+					marginBottom: "2%"
 					}}>
 					Here's what I like working with
 				</div>
@@ -30,6 +31,8 @@ function App() {
 				<div className='Tools'>
 					<div className='Languages'>
 						<div style={{
+							fontSize: 25,
+							fontFamily: 'MadeTommy',
 							marginBottom: '2%'
 						}} className='LanguagesTitle'>Languages</div>
 
@@ -42,6 +45,8 @@ function App() {
 
 					<div className='Frameworks'>
 					<div style={{
+							fontSize: 25,
+							fontFamily: 'MadeTommy',
 							flexBasis: '100%',
 							marginBottom: '2%'
 					}} className='FrameworksTitle'>Frameworks</div>
@@ -55,6 +60,8 @@ function App() {
 
 					<div className='DBs'>
 						<div style={{
+							fontSize: 25,
+							fontFamily: 'MadeTommy',
 							marginBottom: '2%'
 						}} className='DBTitle'>
 							Databases

@@ -4,17 +4,17 @@ export const ToolData = {
 
 		{
 			'name': 'Python',
-			'icon': '/python.png',
+			'icon': '/python.svg',
 		},
 
 		{
 			'name': 'Java',
-			'icon': '/java.png'
+			'icon': '/java.svg'
 		},
 
 		{
 			'name': 'JavaScript',
-			'icon': '/javascript.png'
+			'icon': '/javascript.svg'
 		}
 	],
 
@@ -22,54 +22,54 @@ export const ToolData = {
 
 		{
 			'name': 'React.js',
-			'icon': '/react.png'
+			'icon': '/react.svg'
 		},
 
 		{
 			'name': 'Springboot',
-			'icon': '/springboot.png'
+			'icon': '/springboot.svg'
 		},
 
 		{
 			'name': 'Flask',
-			'icon': '/flask.png'
+			'icon': '/flask.svg'
 		},
 
 		{
 			'name': 'Ansible',
-			'icon': '/ansible.png'
+			'icon': '/ansible.svg'
 		},
 
 		{
 			'name': 'Tensorflow',
-			'icon': '/tensorflow.png'
+			'icon': '/tensorflow.svg'
 		},
 
 		{
 			'name': 'Scikit-Learn',
-			'icon': '/sklearn.png'
+			'icon': '/sklearn.svg'
 		},
 
 		{
 			'name': 'Node.js',
-			'icon': '/node.png'
+			'icon': '/node-js.svg'
 		}
 	],
 
 	'Databases': [
 		{
 			'name': 'MySQL',
-			'icon': '/mysql.png'
+			'icon': '/mysql.svg'
 		},
 
 		{
 			'name': 'PostgreSQL',
-			'icon': '/psql.png'
+			'icon': '/postgresql.svg'
 		},
 
 		{
 			'name': 'MongoDB',
-			'icon': '/mongo.png'
+			'icon': '/mongodb.svg'
 		}
 	]
 };
