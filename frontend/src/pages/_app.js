@@ -5,6 +5,7 @@ import './styles/experience.css'
 import './styles/grid.css'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import 'react-pro-sidebar/dist/css/styles.css';
+import './styles/job.css'
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
