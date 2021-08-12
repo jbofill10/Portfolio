@@ -1,25 +1,75 @@
 import React from 'react';
+import { ToolData } from '../constants/ToolsData.jsx'
+import { ToolIcon } from "../components"
 
 export default function Job(props) {
 	return (
 		<div className='JobContainer'>
-			<div className='JobIcon' style={{
-				height: '85%',
-				width: '10%',
-				backgroundColor: '#465172',
-				alignItems: 'left',
-				margin: 'auto 89% auto auto',
-				borderRadius: '50%',
-				textAlign: 'center',
-				boxShadow: '0 0 0 4px #55638B'
-			}}>
-				<img src='/leidos.svg' style={{
-					height:'50%',
-					width: '80%',
-					margin: '12% auto auto auto',
+			<div className='JobMeta'>
+				<div className='JobLeftMeta'>
+					<div
+						style={{'fontSize':'30px'}}
+						className='CompanyName'>
+						{props.company}
+					</div>
+					<div
+						style={{'fontSize':'18px'}}
+						className='JobTitle'>
+						{props.title}
+					</div>
 
-				}}/>
+					<div style={{
+								'fontSize':'18px', 
+								'fontStyle':'italic'
+								}} 
+						className='JobTimeFrame'
+					>
+						{props.timeframe}
+					</div>
+				</div>
+
+				<div className='JobRightMeta'>
+					<div className='JobLanguages'>
+						{getTools(props.languages, 'Languages').map(i => {
+							return (
+								<ToolIcon 
+									src={i.icon}
+									height={35}
+									width={32}
+								/>
+							)
+						})}
+					</div>
+
+					<div className='JobFrameworks'>
+						{getTools(props.frameworks, 'Frameworks').map(i => {
+							return (
+								<ToolIcon 
+									src={i.icon}
+									height={35}
+									width={32}
+								/>
+							)
+						})}
+					</div>
+					<div className='JobDatabases'>
+						{getTools(props.databases, 'Databases').map(i => {
+							return (
+								<ToolIcon 
+									src={i.icon}
+									height={35}
+									width={32}
+								/>
+							)
+						})}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
+}
+
+function getTools(tools, type){
+	return ToolData[type].filter(tool =>
+		tools.includes(tool.name))
 }

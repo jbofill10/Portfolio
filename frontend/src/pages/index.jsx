@@ -38,7 +38,10 @@ function App() {
 
 						{ToolData['Languages'].map(i => {
 							return (
-								<ToolIcon src={i.icon}/>
+								<ToolIcon 
+									src={i.icon} 
+									height={42} 
+									width={45}/>
 							);
 						})}
 					</div>
@@ -53,7 +56,10 @@ function App() {
 
 						{ToolData['Frameworks'].map(i => {
 							return (
-								<ToolIcon src={i.icon}/>
+								<ToolIcon 
+									src={i.icon}
+									height={42} 
+									width={45}/>
 							)
 						})}
 					</div>
@@ -67,8 +73,11 @@ function App() {
 							Databases
 						</div>
 						{ToolData['Databases'].map(i => {
-							return <ToolIcon src={i.icon}/>
-						})}
+							return ( <ToolIcon 
+								src={i.icon} 
+								height={42} 
+								width={45}/>
+						)})}
 					</div>
 				</div>
 			</div>
