@@ -19,9 +19,9 @@ export default function Job(props) {
 					</div>
 
 					<div style={{
-								'fontSize':'18px', 
+								'fontSize':'18px',
 								'fontStyle':'italic'
-								}} 
+								}}
 						className='JobTimeFrame'
 					>
 						{props.timeframe}
@@ -32,7 +32,7 @@ export default function Job(props) {
 					<div className='JobLanguages'>
 						{getTools(props.languages, 'Languages').map(i => {
 							return (
-								<ToolIcon 
+								<ToolIcon
 									src={i.icon}
 									height={35}
 									width={32}
@@ -44,7 +44,7 @@ export default function Job(props) {
 					<div className='JobFrameworks'>
 						{getTools(props.frameworks, 'Frameworks').map(i => {
 							return (
-								<ToolIcon 
+								<ToolIcon
 									src={i.icon}
 									height={35}
 									width={32}
@@ -55,7 +55,7 @@ export default function Job(props) {
 					<div className='JobDatabases'>
 						{getTools(props.databases, 'Databases').map(i => {
 							return (
-								<ToolIcon 
+								<ToolIcon
 									src={i.icon}
 									height={35}
 									width={32}

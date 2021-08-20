@@ -1,4 +1,4 @@
-import { Sidebar, ToolIcon } from '../components/index'
+import { Sidebar, ToolIcon, ToolGrid } from '../components/index'
 import { ToolData } from '../constants/index';
 
 function App() {
@@ -29,56 +29,9 @@ function App() {
 				</div>
 
 				<div className='Tools'>
-					<div className='Languages'>
-						<div style={{
-							fontSize: 25,
-							fontFamily: 'MadeTommy',
-							marginBottom: '2%'
-						}} className='LanguagesTitle'>Languages</div>
-
-						{ToolData['Languages'].map(i => {
-							return (
-								<ToolIcon 
-									src={i.icon} 
-									height={42} 
-									width={45}/>
-							);
-						})}
-					</div>
-
-					<div className='Frameworks'>
-					<div style={{
-							fontSize: 25,
-							fontFamily: 'MadeTommy',
-							flexBasis: '100%',
-							marginBottom: '2%'
-					}} className='FrameworksTitle'>Frameworks</div>
-
-						{ToolData['Frameworks'].map(i => {
-							return (
-								<ToolIcon 
-									src={i.icon}
-									height={42} 
-									width={45}/>
-							)
-						})}
-					</div>
-
-					<div className='DBs'>
-						<div style={{
-							fontSize: 25,
-							fontFamily: 'MadeTommy',
-							marginBottom: '2%'
-						}} className='DBTitle'>
-							Databases
-						</div>
-						{ToolData['Databases'].map(i => {
-							return ( <ToolIcon 
-								src={i.icon} 
-								height={42} 
-								width={45}/>
-						)})}
-					</div>
+					<ToolGrid name='Languages' icons={ToolData}/>
+					<ToolGrid name='Frameworks' width={17} flexDir={'row'} icons={ToolData}/>
+					<ToolGrid name='Databases' icons={ToolData}/>
 				</div>
 			</div>
 		</div>
