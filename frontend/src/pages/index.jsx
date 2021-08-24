@@ -22,8 +22,7 @@ function App() {
 
 				<div className='ToolIntro' style={{
 					fontFamily: 'MadeTommy',
-					fontSize: 25,
-					marginBottom: "2%"
+					fontSize: '2.3vw',
 					}}>
 					Here's what I like working with
 				</div>

@@ -11,7 +11,8 @@
 }
 
 .pro-sidebar, collapsed {
-	height: 100vh !important;
+	height: 100%;
+	position: absolute;
 }
 
 .pro-menu-item {
@@ -52,5 +53,7 @@
 }
 
 .Sidebar {
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
 }

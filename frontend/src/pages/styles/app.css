@@ -9,34 +9,43 @@
 }
 
 .App {
-		display: flex;
-		background-color: #2B2F3B;
+	display: flex;
+	background-color: #2B2F3B;
 }
 
- html,
-			body,
-			body > div:first-child,
-			div#__next,
-			div#__next > div {
-				max-height: 100%;
-				margin: auto;
-			}
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+		height: 100vh;
+		margin: auto;
+		width: 100vw;
+	}
+
+.Introduction {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-size: 1.5vw;
+	font-family: MadeTommy;
+}
 
 .IntroText {
 	width: 500px;
 	margin: 10% auto 1% auto ;
+	text-align: center;
+	align-content: center;
 }
 
-.Introduction {
-	font-size: 25px;
-	font-family: MadeTommy;
-}
 
 .Name {
-	font-size: 38px;
+	font-size: 2.5vw;
 }
 
 .Description {
+	word-wrap: break-word;
+	height:100%;
 }
 
 .Separator {
